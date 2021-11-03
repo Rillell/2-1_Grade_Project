@@ -1,0 +1,38 @@
+void CFontView::OnDraw(CDC* pDC)
+{
+	CFontDoc* pDoc = GetDocument();
+	ASSERT_VALID(pDoc);
+	if (!pDoc)
+		return;
+
+	// TODO: 여기에 원시 데이터에 대한 그리기 코드를 추가합니다.
+
+   pDC->TextOutW(0,20,_T("안녕하세요 MFC 테스트이다."));   //기본 글꼴로 출력
+   CFont myFont,*pOldFont; 
+   int y=60, size=0; 
+   for(size=16; size<=36; size+=4){
+   //폰트 만들기 
+   myFont.CreateFont(size,                    //가로 세로 크기 
+                   0,0,0,                            //기울어짐 각도 
+                   FW_DONTCARE,                    //폰트의 굵기 
+                   FALSE,                          //이탤릭 플러그 
+                   FALSE,                          //언더라인 플러그 
+                   FALSE,                          //STRIKEOUT 플러그 
+                   DEFAULT_CHARSET,                //CHAR SET 출력의 질 
+                   OUT_DEFAULT_PRECIS, 
+                   CLIP_DEFAULT_PRECIS,
+                   DEFAULT_QUALITY, 
+                   DEFAULT_PITCH,
+                   _T("굴림체"));				// 폰트 이름
+   pDC->SetTextColor(RGB(255,0,0));
+//   pDC->SetBkColor(RGB(0,0,255));
+   pDC->SetBkMode(TRANSPARENT);					//폰트에 배경을 없애는 것  불투명 : OPAQUEE, 투명 : TRANSPARENT
+   //폰트를 등록하고 이전 폰트를 pOldFont에 저장한다. 
+   pOldFont=pDC->SelectObject(&myFont); 
+   pDC->TextOutW(20,y,_T("폰트 GDI 오브젝트 연습 중입니다.")); //새로이 변경된 글꼴로 출력
+   pDC->SelectObject(pOldFont);         //pOldFont를 다시 설정한다. 
+   myFont.DeleteObject();               //이전 폰트를 지운다. 
+	y+=size*2;
+   }
+
+}                               

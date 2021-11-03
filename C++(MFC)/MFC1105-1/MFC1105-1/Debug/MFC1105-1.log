@@ -1,0 +1,10 @@
+﻿  MFC1105-1.cpp
+  MFC1105-1View.cpp
+C:\Users\kimyu\OneDrive\문서\소공과\2학년2학기 수업자료\c++프로그래밍(MFC)\MFC1105-1\MFC1105-1\MFC1105-1View.cpp(30,2): error C2065: 'ID_32772': 선언되지 않은 식별자입니다.
+C:\Users\kimyu\OneDrive\문서\소공과\2학년2학기 수업자료\c++프로그래밍(MFC)\MFC1105-1\MFC1105-1\MFC1105-1View.cpp(123,2): error C2065: 'CWinTestDoc': 선언되지 않은 식별자입니다.
+C:\Users\kimyu\OneDrive\문서\소공과\2학년2학기 수업자료\c++프로그래밍(MFC)\MFC1105-1\MFC1105-1\MFC1105-1View.cpp(123,15): error C2065: 'pDoc': 선언되지 않은 식별자입니다.
+C:\Users\kimyu\OneDrive\문서\소공과\2학년2학기 수업자료\c++프로그래밍(MFC)\MFC1105-1\MFC1105-1\MFC1105-1View.cpp(126,4): error C2065: 'pDoc': 선언되지 않은 식별자입니다.
+C:\Users\kimyu\OneDrive\문서\소공과\2학년2학기 수업자료\c++프로그래밍(MFC)\MFC1105-1\MFC1105-1\MFC1105-1View.cpp(126,33): error C2065: 'pDoc': 선언되지 않은 식별자입니다.
+C:\Users\kimyu\OneDrive\문서\소공과\2학년2학기 수업자료\c++프로그래밍(MFC)\MFC1105-1\MFC1105-1\MFC1105-1View.cpp(129,1): error C2059: 구문 오류: '}'
+C:\Users\kimyu\OneDrive\문서\소공과\2학년2학기 수업자료\c++프로그래밍(MFC)\MFC1105-1\MFC1105-1\MFC1105-1View.cpp(129,1): error C2143: 구문 오류: ';'이(가) '}' 앞에 없습니다.
+  코드를 생성하고 있습니다...
